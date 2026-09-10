@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<!-- DEMO de venta, no el sitio oficial del local. Lleva nombre, reseñas y
+     horario reales, por eso va con noindex. Se quita si el local contrata. -->
+<meta name="robots" content="noindex, nofollow">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DeliciasJose · Tortas artesanales y bocadillos en San Bernardo</title>
+<meta name="description" content="DeliciasJose — tortas artesanales, bocadillos y mesas dulces por encargo en Baquedano 2033, San Bernardo. 4.4★ en Google.">
+
+<!--
+  ============================================================
+  DEMO — DELICIASJOSE (Baquedano 2033, San Bernardo)
+
+  ✅ DATOS REALES VERIFICADOS (10-09-2026)
+  - Google Maps: 4.4★, 7 opiniones, Cafetería.
+  - Dirección: Baquedano 2033, San Bernardo.
+  - Place ID real: 0x9662d90028ac7f03:0xe5206a1600b2ecc
+  - Coordenadas: -33.6077912, -70.6834244
+  - Servicio: consumo en el lugar.
+  - Palabra más repetida en sus opiniones: tortas (3 menciones).
+  - Sus fotos más recientes en Google son de hace 11 días: el negocio está activo.
+  - Sus dos mejores reseñas son de hace uno y dos meses.
+  - 3 reseñas reales con nombre.
+  - Fotos: fotos propias del local publicadas en su ficha de Google.
+
+  ⚠️ PENDIENTE / NUNCA INVENTADO:
+  - DIFÍCIL DE CONTACTAR A DISTANCIA:
+  -   - NO tiene teléfono publicado ('Agregar número de teléfono del lugar').
+  -   - NO tiene horarios publicados ('Agregar horarios').
+  -   - NO tiene sitio web ('Agregar sitio web').
+  -   - Su ficha de Google NO ESTÁ RECLAMADA ('Reclamar este negocio').
+  -   => O se les escribe por Instagram (hay que encontrarlo) o se va al local.
+  -   A favor: suben fotos hace 11 días, así que alguien está pendiente de la ficha.
+  - SIN INSTAGRAM ENCONTRADO. Es lo primero que hay que buscar para este.
+  - PRECIOS: ninguno publicado. Todo va a 'Consultar'.
+  - NOMBRES DE PRODUCTO: son descripciones, no nombres suyos. Pedirles la lista real.
+  - Se descartó una de sus fotos de Google porque salía una clienta identificable con
+  -   su torta de cumpleaños. Se conservó solo el recorte de la torta.
+  - Falta el logo real.
+  ============================================================
+-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Faustina:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Familjen+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="loader">
+  <div class="loader-marca" aria-hidden="true">
+    <svg viewBox="0 0 64 64" width="48" height="48"><path d="M8 40c0-14 10-24 24-24s24 10 24 24z" fill="currentColor"/><path d="M8 40h48v7H8z" fill="currentColor" opacity=".55"/></svg>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="header-inner">
+    <button class="brand" data-tab="inicio">
+      <span class="brand-ico" aria-hidden="true">
+        <svg viewBox="0 0 64 64" width="22" height="22"><path d="M8 40c0-14 10-24 24-24s24 10 24 24z" fill="currentColor"/><path d="M8 40h48v7H8z" fill="currentColor" opacity=".55"/></svg>
+      </span>
+      <span class="brand-name">DeliciasJose</span>
+    </button>
+
+    <nav class="nav-links" id="navLinks" aria-label="Navegación principal">
+      <button class="nav-link active" data-tab="inicio">Inicio</button>
+      <button class="nav-link" data-tab="nosotros">Nosotros</button>
+      <button class="nav-link" data-tab="carta">Carta</button>
+      <button class="nav-link" data-tab="resenas">Reseñas</button>
+      <button class="nav-link" data-tab="visitanos">Visítanos</button>
+    </nav>
+
+    <div class="header-actions">
+      <button class="btn btn-solid btn-sm" data-tab="visitanos">Cómo llegar</button>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ================= INICIO ================= -->
+<section class="tab-panel active" data-tab-panel="inicio">
+  <div class="hero">
+    <div class="hero-photo">
+      <img src="fotos/bandejas.jpg" alt="Bandejas de bocadillos dulces y salados de DeliciasJose, preparadas para un evento">
+    </div>
+    <div class="hero-scrim"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal">Tortas artesanales y bocadillos · San Bernardo</p>
+      <h1 class="reveal">Artesanales de verdad</h1>
+      <p class="hero-lead reveal">Tortas, bocadillos y mesas dulces por encargo en Baquedano 2033. Con harto relleno y todo fresquito.</p>
+
+      <div class="hero-pills reveal">
+        <span class="pill"><span class="status-dot" id="statusDot"></span><span id="statusText">Consultando horario…</span></span>
+        <span class="pill">★ <strong>4.4</strong> · 7 opiniones en Google</span>
+        
+      </div>
+
+      <div class="hero-ctas reveal">
+        <button class="btn btn-solid" data-tab="carta">Ver la carta</button>
+        <button class="btn btn-ghost" data-tab="visitanos">Cómo llegar</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="wrap">
+      <div class="eyebrow-row reveal">
+        <span class="eyebrow">Lo que hacemos</span>
+        <h2 class="section-title">Para el día que importa</h2>
+        <p class="section-sub">"Tortas" es la palabra más repetida en sus opiniones.</p>
+      </div>
+      <div class="pilares">
+        <article class="info-card reveal">
+          <div class="pilar-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 13h16v5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><path d="M4 13c0-3 4-5 8-5s8 2 8 5"/><path d="M12 8V5"/><path d="M10.5 4.4c0-1 1.5-1 1.5-2.2 0 1.2 1.5 1.2 1.5 2.2"/></svg></div>
+          <h3>Tortas artesanales</h3>
+          <p>"Muy ricas sus tortas, artesanales de verdad, con harto relleno y muy bonitas" — cita textual de una reseña real.</p>
+        </article>
+        <article class="info-card reveal">
+          <div class="pilar-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 15.5h19a2 2 0 0 1-2 2h-15a2 2 0 0 1-2-2z"/><path d="M5 15.5c0-3.9 3.1-7 7-7s7 3.1 7 7"/><circle cx="9" cy="12.4" r="1"/><circle cx="12" cy="11.4" r="1"/><circle cx="15" cy="12.4" r="1"/></svg></div>
+          <h3>Bocadillos y mesa dulce</h3>
+          <p>Bandejas completas de bocadillos dulces y salados para eventos, fotografiadas por ellos mismos.</p>
+        </article>
+        <article class="info-card reveal">
+          <div class="pilar-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3.2 2.6 5.6 6 .8-4.4 4.2 1.1 6.1L12 17l-5.3 2.9 1.1-6.1L3.4 9.6l6-.8z"/></svg></div>
+          <h3>Ingredientes de verdad</h3>
+          <p>"Todo fresquito y con ingredientes de muy buena calidad", dice una reseña. Otra lo resume: "muy buen servicio, 10/10".</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= NOSOTROS ================= -->
+<section class="tab-panel" data-tab-panel="nosotros">
+  <div class="section">
+    <div class="wrap">
+      <div class="eyebrow-row reveal">
+        <span class="eyebrow">Quiénes somos</span>
+        <h2 class="section-title">Tortas y bocadillos por encargo</h2>
+      </div>
+      <div class="nosotros-grid">
+        <div class="nosotros-text reveal">
+          <p class="lead">
+            DeliciasJose hace <strong>tortas artesanales, bocadillos y mesas dulces</strong>
+            en Baquedano 2033, San Bernardo. Bandejas para eventos, tortas de cumpleaños y
+            pastelería del día.
+          </p>
+          <p>
+            Tienen <strong>4.4 estrellas</strong> y sus reseñas más recientes son de hace
+            uno y dos meses — están trabajando ahora. Suben fotos nuevas seguido: las
+            últimas son de hace once días.
+          </p>
+          <div class="badges reveal">
+            <span class="badge">4.4★ · 7 opiniones</span>
+            <span class="badge">Consumo en el lugar</span>
+            <span class="badge">Tortas por encargo</span>
+            <span class="badge">Bocadillos para eventos</span>
+            <span class="badge">Mesas dulces</span>
+          </div>
+          
+        </div>
+        <div class="nosotros-fotos reveal">
+          <figure class="foto-grande">
+            <img src="fotos/bocadillos.jpg" alt="Bandejas de bocadillos dulces de DeliciasJose ordenados en filas" loading="lazy">
+            <figcaption>Bandejas para eventos</figcaption>
+          </figure>
+          <figure>
+            <img src="fotos/torta.jpg" alt="Torta de cumpleaños de DeliciasJose con crema y chips de chocolate" loading="lazy">
+          </figure>
+          <figure>
+            <img src="fotos/bandejas.jpg" alt="Bandejas de bocadillos dulces y salados de DeliciasJose" loading="lazy">
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CARTA ================= -->
+<section class="tab-panel" data-tab-panel="carta">
+  <div class="section">
+    <div class="wrap">
+      <div class="eyebrow-row reveal">
+        <span class="eyebrow">La carta</span>
+        <h2 class="section-title">Nuestra carta</h2>
+        <p class="section-sub">Arma tu pedido y consúltanos. Los productos que ves acá son los que se identifican en sus propias fotos y en sus reseñas reales.</p>
+      </div>
+      <div class="menu-tabs" id="menuTabs" role="tablist" aria-label="Categorías de la carta"></div>
+      <div id="menuPanels"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= RESEÑAS ================= -->
+<section class="tab-panel" data-tab-panel="resenas">
+  <div class="section">
+    <div class="wrap">
+      <div class="eyebrow-row reveal">
+        <span class="eyebrow">Lo que dicen</span>
+        <h2 class="section-title">4.4 / 5 · 7 opiniones en Google</h2>
+      </div>
+      <div class="resenas-grid">
+        <article class="review-card reveal">
+          <div class="stars" aria-label="5 de 5 estrellas">★★★★★</div>
+          <p>"Muy ricas sus tortas, artesanales de verdad, con harto relleno y muy bonitas."</p>
+          <footer><span class="avatar" aria-hidden="true">JA</span>
+            <span class="review-meta"><strong>Jennifer Andrea Vargas Cea</strong>hace 2 meses</span></footer>
+        </article>
+        <article class="review-card reveal">
+          <div class="stars" aria-label="5 de 5 estrellas">★★★★★</div>
+          <p>"Muy ricas las tortas y pasteles. Muchas gracias: todo fresquito y con ingredientes de muy buena calidad."</p>
+          <footer><span class="avatar" aria-hidden="true">DA</span>
+            <span class="review-meta"><strong>Darling Astorga</strong>hace 2 meses</span></footer>
+        </article>
+        <article class="review-card reveal">
+          <div class="stars" aria-label="5 de 5 estrellas">★★★★★</div>
+          <p>"Muy buen servicio, 10/10. Todo muy limpio, buena calidad de productos y muy ricos."</p>
+          <footer><span class="avatar" aria-hidden="true">JC</span>
+            <span class="review-meta"><strong>Jimena Carvajal Concha</strong>hace un mes</span></footer>
+        </article>
+      </div>
+      <p class="review-cta-bajo reveal">
+        <a href="https://search.google.com/local/writereview?placeid=0x9662d90028ac7f03:0xe5206a1600b2ecc" target="_blank" rel="noopener">
+          ¿Nos visitaste? Déjanos tu reseña en Google
+        </a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= VISÍTANOS ================= -->
+<section class="tab-panel" data-tab-panel="visitanos">
+  <div class="section">
+    <div class="wrap">
+      <div class="eyebrow-row reveal">
+        <span class="eyebrow">Visítanos</span>
+        <h2 class="section-title">Estamos en Baquedano 2033</h2>
+      </div>
+      <div class="visitanos-grid">
+        <div class="visitanos-info reveal">
+          <div class="dato">
+            <span class="dato-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-6-7-11a7 7 0 1 1 14 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+            <div><strong>Baquedano 2033</strong><span>San Bernardo, Región Metropolitana</span></div>
+          </div>
+          <div class="dato">
+            <span class="dato-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+            <div>
+              <strong>Horario</strong>
+              <span>Horario por confirmar</span>
+              <span class="nota-fuente">Google no publica el horario de este local. Conviene preguntarlo directamente.</span>
+            </div>
+          </div>
+          <div class="dato">
+            <span class="dato-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 7h16v10H4z"/><path d="M4 7l8 6 8-6"/></svg></span>
+            <div>
+              <strong>Contacto</strong>
+              <span class="nota-fuente">El local todavía no tiene teléfono publicado en Google. En cuanto lo tengamos, se agrega acá el botón de WhatsApp.</span>
+            </div>
+          </div>
+          <div class="visitanos-ctas">
+            <a class="btn btn-ghost" href="https://www.google.com/maps/dir/?api=1&destination=DeliciasJose+San+Bernardo&destination_place_id=0x9662d90028ac7f03:0xe5206a1600b2ecc" target="_blank" rel="noopener">Cómo llegar</a>
+            <a class="btn btn-ghost" href="https://waze.com/ul?ll=-33.6077912,-70.6834244&navigate=yes" target="_blank" rel="noopener">Abrir en Waze</a>
+          </div>
+        </div>
+        <div class="map-frame reveal">
+          <!-- Embed REAL: place id y coordenadas de su ficha de Google (10-09-2026) -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.0!2d-70.6834244!3d-33.6077912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662d90028ac7f03%3A0xe5206a1600b2ecc!2sDeliciasJose!5e0!3m2!1ses-419!2scl!4v1789005600000!5m2!1ses-419!2scl"
+            loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"
+            title="Mapa de DeliciasJose en Baquedano 2033"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div>
+      <span class="brand-name footer-brand">DeliciasJose</span>
+      <p>Baquedano 2033 · San Bernardo, Región Metropolitana</p>
+      <p class="status-line"><span class="status-dot" id="statusDot2"></span> <span id="statusText2">—</span></p>
+    </div>
+    <div class="footer-links">
+      <a href="https://search.google.com/local/writereview?placeid=0x9662d90028ac7f03:0xe5206a1600b2ecc" target="_blank" rel="noopener">Dejar una reseña</a>
+    </div>
+  </div>
+</footer>
+
+<script src="vida.js"></script>
+<script src="carta-fotos.js"></script>
+<script src="script.js"></script>
+<script src="carrito.js"></script>
+</body>
+</html>
