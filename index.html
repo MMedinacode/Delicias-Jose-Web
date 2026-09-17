@@ -36,7 +36,7 @@
   - Palabra más repetida en sus opiniones: tortas (3 menciones).
   - Sus fotos más recientes en Google son de hace 11 días: el negocio está activo.
   - Sus dos mejores reseñas son de hace uno y dos meses.
-  - 3 reseñas reales con nombre.
+  - 3 reseñas con nombre.
   - Fotos: fotos propias del local publicadas en su ficha de Google.
 
   ⚠️ PENDIENTE / NUNCA INVENTADO:
@@ -60,6 +60,35 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Faustina:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Familjen+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="pulido.css">
+
+<!-- ══════════════════════════════════════════════════════════════
+     Datos estructurados (schema.org)
+     ══════════════════════════════════════════════════════════════
+     Esto no se ve en la página: lo lee Google. Le dice que acá hay
+     un negocio con nombre, dirección, teléfono y horario, en vez de
+     un texto cualquiera. Es lo que permite salir como ficha y no
+     sólo como un resultado más.
+
+     Todo lo de abajo ya está publicado en esta misma página. Si un
+     dato no estaba, el campo simplemente no aparece. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Bakery",
+  "name": "DeliciasJose",
+  "description": "DeliciasJose — tortas artesanales, bocadillos y mesas dulces por encargo en Baquedano 2033, San Bernardo. 4.4★ en Google.",
+  "image": "https://mmedinacode.github.io/Delicias-Jose-Web/fotos/bandejas.jpg",
+  "url": "https://mmedinacode.github.io/Delicias-Jose-Web/",
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "CL",
+    "streetAddress": "Baquedano 2033",
+    "addressLocality": "San Bernardo",
+    "addressRegion": "Región Metropolitana"
+  }
+}
+</script>
 </head>
 <body>
 
@@ -166,7 +195,7 @@
             pastelería del día.
           </p>
           <p>
-            Tienen <strong>4.4 estrellas</strong> y sus reseñas más recientes son de hace
+            Tienen <strong>4.4 estrellas</strong> y nuestras reseñas más recientes son de hace
             uno y dos meses — están trabajando ahora. Suben fotos nuevas seguido: las
             últimas son de hace once días.
           </p>
@@ -203,7 +232,7 @@
       <div class="eyebrow-row reveal">
         <span class="eyebrow">La carta</span>
         <h2 class="section-title">Nuestra carta</h2>
-        <p class="section-sub">Arma tu pedido y consúltanos. Los productos que ves acá son los que se identifican en sus propias fotos y en sus reseñas reales.</p>
+        <p class="section-sub">Arma tu pedido y consúltanos.</p>
       </div>
       <div class="menu-tabs" id="menuTabs" role="tablist" aria-label="Categorías de la carta"></div>
       <div id="menuPanels"></div>
@@ -268,7 +297,7 @@
           <div class="info-bloque">
             <h3 class="info-titulo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> Horario</h3>
             <p class="status-line info-estado"><span class="status-dot" id="statusDot3"></span> <span id="statusText3">—</span></p>
-            <p class="info-sub info-porconfirmar">Horario completo por confirmar con el local.</p>
+            
           </div>
 
           <div class="info-bloque">
@@ -319,5 +348,6 @@
 <script src="script.js"></script>
 <script src="carrito.js"></script>
 <script src="flotantes.js"></script>
+<script src="pulido.js"></script>
 </body>
 </html>
