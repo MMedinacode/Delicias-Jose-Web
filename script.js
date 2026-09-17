@@ -4,7 +4,7 @@
    ⚠️ SIN PRECIOS Y SIN NOMBRES PROPIOS. No publican carta en ningún canal
    y su ficha de Google ni siquiera está reclamada. Los productos de esta
    carta están DESCRITOS, no nombrados: salen de lo que se ve en sus
-   propias fotos y de lo que dicen sus reseñas. Ninguno inventado.
+   propias fotos y de lo que dicen nuestras reseñas. Ninguno inventado.
    Pedirles la lista real con sus nombres y precios.
    ============================================================ */
 
@@ -14,7 +14,7 @@ const MENU = {
     "items": [
       {
         "n": "Torta artesanal",
-        "d": "\"Artesanales de verdad, con harto relleno y muy bonitas\" — reseña real"
+        "d": "\"Artesanales de verdad, con harto relleno y muy bonitas\" — reseña"
       },
       {
         "n": "Torta de cumpleaños",
